@@ -1,0 +1,212 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height: 59px;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: #0c0f014d;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+/* Navigation Bar: Logo and Image */
+#logo{
+    margin: 10px 34px;
+}
+
+#logo img{
+    height: 100px;
+    margin:-7px -16px;
+	border-radius: 15px;
+}
+
+
+/* Navigation Bar: List Styling */
+
+#navbar ul{
+    display: flex;
+    font-family:'Baloo Bhai', cursive;
+	
+}
+
+#navbar ul li{ 
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+#content {
+	text-align: center;
+	
+	background-color:white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=tel], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+
+input[type=reset] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=reset]:hover {
+  background-color: #45a049;
+}
+
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width : 600px){
+	#navbar, input[type = submit] {
+		width: 100%;
+		margin-top: 0;
+	}
+}
+
+ /* Wide Screens */
+      @media only screen and (max-width : 1200px) {
+        html, body {
+          font-family: "Open Sans", sans-serif;
+          background-color: #DDD;
+          height: 100%;
+          font-size: 20px;
+        }
+      }
+  
+      /* Desktops */
+      @media only screen and (max-width : 992px) {
+        html, body {
+          font-family: "Open Sans", sans-serif;
+          background-color: #DDD;
+          height: 100%;
+          font-size: 16px;
+        }
+      }
+  
+      /* Tablets */
+      @media only screen and (max-width : 768px) {
+        html, body {
+          font-family: "Open Sans", sans-serif;
+          background-color: #DDD;
+          height: 100%;
+          font-size: 12px;
+        }
+      }
+  
+      /* Phones */ 
+      @media only screen and (max-width : 480px) {
+        html, body {
+          font-family: "Open Sans", sans-serif;
+          background-color: #DDD;
+          height: 100%;
+          font-size: 10px;
+        }
+      }
+
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+	text-align: center;
+}

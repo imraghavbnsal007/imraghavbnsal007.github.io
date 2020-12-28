@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Best Pizza in the cave | www.moltencave.com</title>
+	<link rel="stylesheet" href="Assests/CSS/site.css">
+	<script src="Assests/Scripts/index.js"> </script>
+	<link rel="stylesheet" media="screen and (max-width: 1170px)" href="Assests/CSS/phone.css">
+	<link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<nav id="navbar">
+		<div id="logo">
+			<img src="Assests/Images/molten.jpg" alt="moltencave.com">
+		</div>
+		<ul>
+			<li class="item"><a href="index.html">Home</a></li>
+			<li class="item"><a href="Variety.html">Variety</a></li>
+			<li class="item"><a href="Services.html">Service</a></li>
+			<li class="item"><a href="About us.html">About</a></li>
+			<li class="item"><a href="Contact us.html">Contact Us</a></li>
+		</ul>
+	</nav>
+	<section id="home">
+		<h1 class="h-primary">Welcome to MoltenCave</h1>
+		<p>"Life’s too short for boring food"</p>
+		<p>"The only thing we’re serious about is food"</p>
+		<p>"Our Burgers: a one-way ticket to happiness,
+			Every burger holds a smile"</p>
+		<p> “When you’re here, you’re family” tells everyone that it’s a family-friendly place where they’ll get warm,
+			affable service.</p>
+
+		<br>
+
+		<h2>For facilitate our service just click on login </h2>
+		<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+		<div id="id01" class="modal">
+			<form class="modal-content animate" action="/action_page.php" method="post">
+				<div class="imgcontainer">
+					<span onclick="document.getElementById('id01').style.display='none'" class="close"
+						title="Close Modal">&times;</span>
+					<img src="Assests/Images/molten.jpg" alt="Avatar" class="avatar">
+				</div>
+
+				<div class="container">
+					<label for="uname"><b>Username</b></label>
+					<input type="text" placeholder="Enter Username" name="uname" required>
+
+					<label for="psw"><b>Password</b></label>
+					<input type="password" placeholder="Enter Password" name="psw" required>
+
+					<button type="submit">Login</button>
+					<label>
+						<input type="checkbox" checked="checked" name="remember"> Remember me
+					</label>
+				</div>
+
+				<div class="container" style="background-color:#f1f1f1">
+					<button type="button" onclick="document.getElementById('id01').style.display='none'"
+						class="cancelbtn">Cancel</button>
+					<span class="psw"><a href="#">Forgot password?</a></span>
+				</div>
+			</form>
+		</div>
+	</section>
+
+	<section id="client-section">
+		<h1 class="h-primary center">Our Clients</h1>
+		<div id="clients">
+			<div class="client-item">
+				<img src="Assests/Images/logo1.png" alt="Our Client">
+			</div>
+			<div class="client-item">
+				<img src="Assests/Images/logo2.png" alt="Our Client">
+			</div>
+
+			<div class="client-item">
+				<img src="Assests/Images/logo4.png" alt="Our Client">
+			</div>
+			<div class="client-item">
+				<img src="Assests/Images/logo3.png" alt="Our Client">
+			</div>
+		</div>
+
+	</section>
+	<footer>
+		<div class="center">
+			Copyright &copy; www.MoltenCave.com. All rights reserved!
+		</div>
+	</footer>
+</body>
+
+</html>
